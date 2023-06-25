@@ -1,13 +1,12 @@
 import Header from "@/components/Header";
 import "./globals.css";
 import Providers from "./Providers";
+import Navbar from "@/components/Navbar";
 // import { Inter } from "next/font/google";
-
 // const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
-  title: "IMDb Clone",
-  description: "this is the IMDb clone website",
+  title: "IMBd Clone",
+  description: "...",
 };
 
 export default function RootLayout({ children }) {
@@ -18,6 +17,7 @@ export default function RootLayout({ children }) {
           {/* Header*/}
           <Header />
           {/* Navbar*/}
+          <Navbar />
           {/* SearchBox*/}
           {children}
         </Providers>
